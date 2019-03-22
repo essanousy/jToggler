@@ -16,6 +16,7 @@ $('.jtoggler').jtoggler();
 For using labels add to input data-attribute: `data-jtlabel="Your text label"`. If You need changeable label add `data-jtlabel-success="Toggler on label"`.
 
 If You want to use three-state toggler just add `data-jtmulti-state` attribute to checkbox. If You want use it with disabled add *disabled* attribute to checkbox.
+for Multistate : To specify wich State you want add `data-jtmulti-index='2'` for exemple
 
 If you add new toggler to DOM you must run init() to reinit items.
 
