@@ -136,7 +136,13 @@
                 }
                 $control.append($handle);
                 $element.wrap($wrapper).after($control);
-                $control.find('.jtoggler-btn-wrapper:first').addClass('is-active');
+
+                var index=1;
+                if ($($element).data('jtmulti-index') != null) {
+                    index= $element.data('jtmulti-index');               
+                }
+                
+                $control.find('.jtoggler-btn-wrapper:nth-child(' + index +')').addClass('is-active');
 
             },
             setWarningLabelMessage: function() {
